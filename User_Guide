@@ -1,42 +1,113 @@
-#Practical Extraction Reporting Languag
-#File extension .pl or .pm
-#How to Run 
-For running the script use
-perl <scriptname>
-./<scriptname> #For this permissions should be 755
+#Practical Extraction Reporting Language
+#syntax for perl
+
+print "\#syntax for perl\n";
+
+#file extension should be .pl or .pm
+print "files extension should be .pl or .pm \n";
+#to run the perl script\n perl <scriptname> \n .\<scriptname> the permissions should be 755\n perl -e content to run in interective mode
+print "to run the perl script\n perl <scriptname> \n .\<scriptname> the permissions should be 755\n perl -e content to run in interective mode\n";
 
 
-#Each line must end with semicolon ;
-#creating a file
-vim filename.pl
+#commenting in perl scripting
+#this is single line comment
+print "\#commenting in perl scripting\n";
 
-#commenting 
-#Single line comment use # at the beginning of the line
-#multiple line comments 
-method 1:
-=anyname
- lines
+print "for single line comment use \# \n";
+
+print "\#this single line comment\n";
+=somename
+  this
+  is 
+  multiple
+  line
+  comment
 =cut
-method 2:
-<<anyname
- line
-anyname
 
+print "for multiple line comment use =somename in the starting of the comments and use =cut at the end of the comment\n";
 
-#white spaces
-white spaces are ignored in perl unless they are inside double quotes
+print "=somename\n this is how \n multiple line comments are \n represented\n =cut\n";
 
-#white spaces are ignored in perl
+print "another method of multiple line comments is use lessthan << followed by somename and ended by same name\n";
+<<somename
+this is another type of 
+multiple line comment
+somename
 
-$name    =     "sunanda";
+print "<<somename\n this is another \n type of \n multiple line comments\n somename\n";
 
-print "the name is $name\n";
+#whitespaces
+print "\#whitespaces\n";
 
-#but white spaces inside quotes are not ignored 
-print "here the space is      not ignored\n";
+print "in perl scripting whitespaces are ignored but consider white spaces inside double quotes\n";
 
+print "\$num   =   10 \n";
+print "print \"\$num\\n\"\;\n";
+print "10\n";
 
 #quotes
-double quotes will assign the value but single quotes are not considered
-#Escape 
-use \ to escape any character line\$ \@
+
+print "\#quotes\n";
+print "\$language0 = \"english\"\n";
+print "\$language1 = \"\$language0\"\n";
+print "\$language2 =\'\$language1\'\n";
+
+$language0 = "english\n";
+$language1 = "$language0\n";
+$language2 = '$langugae1\n';
+
+print "language0 is $language0 language1 is $language1 language2 is $language2\n";
+
+#backslash \ escape sequence
+
+print "\# backslash \\ escapes sequence\n";
+
+print "any character is escapes by using \\ followed by the character\n";
+
+print "\\\$ is used to escape the character \$\n";
+
+#Data types
+
+print "\#Data types\n";
+
+print "there are 3 data types\n";
+
+print "scalar represented by \$\n";
+
+print "arrays represented by \@\n";
+
+print "Hashes represented by \%\n";
+
+#scalars
+#scalar is represented with $ symbol
+
+print "#scalar\n";
+print "#scalar is represented with $ symbol\n";
+
+
+print "\$name = \"Sunanda\"\n";
+print "\$num1 = <STDIN>\n";
+print "\$num2 = <STDIN>\n";
+print "\$sum = (\$num1+\$num2)\n";;
+print "the sum of". "\$num1" ."and". "\$num2"."is"."\$sum"."\n";
+
+#numeric scalar
+print "#numerical scalar\n";
+print "\$numscalar =100\n";
+
+#string scalar
+print "#string scalar\n";
+
+
+$strscalar ="Perl";
+
+#vstring
+$vstring = v85.78.73.88;
+
+print $numscalar."-".$strscalar."-".$vstring."\n";
+print "$name\n" x 5,"\n";
+
+#arrays
+print "#arrays are represented by using \@\n";
+
+
