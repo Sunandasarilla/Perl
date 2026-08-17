@@ -1,16 +1,14 @@
 #this program illustrates commenting in perl scripting
 
-#one line commenting
+#single line commenting
 
 =somename
-this is how we crepresent multiple line commenting
+this is how we can represent multiple line comments
 by ending it with
 =cut
 
 <<somename
- this is how we represent multiple line commenting
+ this is how we represent multiple line comments
  by using lessthan symbol followed by some name 
  then ending it with the same name
 somename
-
-
