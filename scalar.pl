@@ -16,4 +16,6 @@ $strscalar ="Perl";
 $vstring = v85.78.73.88;
 
 print $numscalar."-".$strscalar."-".$vstring."\n";
+
+#to print multiple times 
 print "$name\n" x 5,"\n";
