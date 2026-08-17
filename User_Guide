@@ -4,9 +4,12 @@
 For running the script use
 perl <scriptname>
 ./<scriptname> #For this permissions should be 755
+
+
 #Each line must end with semicolon ;
 #creating a file
 vim filename.pl
+
 #commenting 
 #Single line comment use # at the beginning of the line
 #multiple line comments 
@@ -18,11 +21,22 @@ method 2:
 <<anyname
  line
 anyname
+
+
 #white spaces
 white spaces are ignored in perl unless they are inside double quotes
+
+#white spaces are ignored in perl
+
+$name    =     "sunanda";
+
+print "the name is $name\n";
+
+#but white spaces inside quotes are not ignored 
+print "here the space is      not ignored\n";
+
+
 #quotes
 double quotes will assign the value but single quotes are not considered
 #Escape 
 use \ to escape any character line\$ \@
-
-#Datatypes
