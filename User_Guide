@@ -1,0 +1,28 @@
+#Practical Extraction Reporting Languag
+#File extension .pl or .pm
+#How to Run 
+For running the script use
+perl <scriptname>
+./<scriptname> #For this permissions should be 755
+#Each line must end with semicolon ;
+#creating a file
+vim filename.pl
+#commenting 
+#Single line comment use # at the beginning of the line
+#multiple line comments 
+method 1:
+=anyname
+ lines
+=cut
+method 2:
+<<anyname
+ line
+anyname
+#white spaces
+white spaces are ignored in perl unless they are inside double quotes
+#quotes
+double quotes will assign the value but single quotes are not considered
+#Escape 
+use \ to escape any character line\$ \@
+
+#Datatypes
